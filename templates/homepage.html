@@ -1,0 +1,67 @@
+{% include "header.html" %}
+{% block body %}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+
+<div class="login-screen">
+	<div class="app-title">
+		<h1>Manual Geotagging Interface</h1>
+		<h1></h1>
+		<p>{{response}}</p>
+	</div>
+</div>
+
+
+<form action="/calibrate" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Calibrate" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>	
+
+<form action="/groupone" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Verify Group #1" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>		
+
+<form action="/grouptwo" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Verify Group #2" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>	
+
+<form action="/groupthree" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Verify Group #3" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>	
+
+<form action="/groupfour" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Verify Group #4" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>		
+ 
+{% endif %}
+{% endblock %}

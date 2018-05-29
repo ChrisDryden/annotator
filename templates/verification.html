@@ -1,0 +1,75 @@
+{% include "header.html" %}
+
+
+<script type="text/javascript">
+    $('.clickable').bind('click', function (ev) {
+        // Add a click-handler to the image.
+    
+            var $div = $(ev.target);
+            var $display = $div.find('.display');
+
+            var offset = $img.offset();
+            var x = ev.clientX - offset.left;
+            var y = ev.clientY - offset.top;
+
+            $display.text('clicked at x: ' + x + ', y: ' + y);
+
+    });
+</script>
+
+
+ 
+<div class="login-screen">
+	<div class="app-title">
+		<h1>Image Verfication Group #{{session['group']}}</h1>
+		<h1></h1>
+	</div>
+</div>
+
+<br>
+
+<div class="login-screen">
+	<div class="app-title">
+		{% if completed %}
+		<h1>Completed</h1>
+		{% else %}
+		
+		<div>
+  		<div>
+    	<div class='clickable'>
+		
+		<img class='display' src="{{verify_image}}" alt= user_image style='height: 100%; width: 100%; object-fit: contain'>
+		
+		</div>
+    	</div>
+		</div>
+		
+		<br>
+		<h5>Object location at Lat: {{latitude}} and Lon: {{longitude}}</h5>
+
+		{% endif %}
+	</div>
+</div>
+
+<form action="/next_image" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="login-form">
+                <input type="submit" value="Yes" class="btn btn-primary btn-large btn-block">
+			    <br>
+				<input type="submit" value="No" class="btn btn-primary btn-large btn-block">
+			</div>
+		</div>
+	</div>
+</form>		
+
+<form action="/return_home" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Back" class="btn btn-primary btn-large btn-block">
+			</div>
+		</div>
+	</div>
+</form>		
+ 

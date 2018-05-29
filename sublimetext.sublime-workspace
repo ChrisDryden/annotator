@@ -1,0 +1,483 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tota",
+				"totalTime"
+			],
+			[
+				"area",
+				"areaPerSecond"
+			],
+			[
+				"cal",
+				"calculatedFocal"
+			],
+			[
+				"elev",
+				"elevation_test"
+			],
+			[
+				"calc",
+				"calculatedFocal"
+			],
+			[
+				"pixel",
+				"pixelpointx"
+			],
+			[
+				"pano",
+				"panoid"
+			],
+			[
+				"ex",
+				"except"
+			],
+			[
+				"turnOn",
+				"turnOnMotorS0"
+			],
+			[
+				"li",
+				"list_of_characters"
+			],
+			[
+				"hori",
+				"horizontalwordsobjects"
+			],
+			[
+				"object",
+				"objectword"
+			],
+			[
+				"hor",
+				"horizontalwords"
+			],
+			[
+				"add",
+				"addcharacter"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"mes",
+				"message"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "blob_detection.py",
+			"settings":
+			{
+				"buffer_size": 4371,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.py",
+			"settings":
+			{
+				"buffer_size": 5279,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\\section{Introduction}\n\\label{sec:intro}\n\\subsection{Background}\n\\hi{Aerial surveys are valuable tools for law enforcement, and accurate information is critical for gathering evidence aswell as ensuring safety of law enforcement officers in high risk areas. Law enforcement officials typically survey a high risk area manually. Problems with safety, cost and logistics are challenges that have rendered this approach unfavourable. The use of small, unmanned aerial vehicles (UAVs) offer an alternative solution to such challenges, and can prove to be useful tools for many law enforcement situations applications, such as aerial surveilance, searching for missing persons, and evidence gathering. As an example, the German police in 2015 were unable to apprehend vandals, spraying graffitti on their national railway system and they deployed UAV's with thermal cameras and they were able to apprehand vandals. \\citep{auvsi}.} \n\\newline\n\n\\subsection{Scope of Work}\nTo demonstrate the power of using small UAVs for law enforcement applications, The University of Toronto Aerospace Team UAV Division (UTAT UAV) has conducted flight operations in the Canadian northern wilderness, which includes a census of four waterfowl species (the Lesser Snow Goose, the “Blue” Snow Goose, the Canada Goose and the Lesser White Fronted Goose) and retrieval of an egg sample from from an identified nest. Information in the census is comprised of the following items:\n\\begin{enumerate}\n\\item The number of each goose species in the area\n\\item The number and location of the nests of each species\n\\item A Ripley's K Function calculated for each identified nest, to be used in statistical analyses\n\\end{enumerate}\nIn order to accomplish these tasks, UTAT UAV utilized its novel next generation quadrotor, the University of Toronto Pathfinder (UTP). The technical details of this system, its design justifications for meeting the above objectives, and a detailed safety and risk mitigation strategy are discussed in the Phase I report submitted on January 15, 2016.\n\\newline\n\n\\subsection{Operational Overview and Strategy}\nThe mission is divided into two distinct phases. The first involves in-air surveillance from the fixed-wing UT-X2B to generate data for the goose and nest census, and also to direct the third stage, which involves egg retrieval using the UT-XD quadcopter.\n\nPhase I aims to survey and image the flight areas of interest to provide data for goose species counts, nest counts, and nest geolocation. The nest geolocation then informs the choice of a suitable target for Phase II, egg retrieval. UT-X2B uses a Teledyne Dalsa Genie TS-C4096 payload camera with Vision Components VCSBC Quadro wide angle camera and flies at 200ft AGL altitude in a comprehensive lawn mower search pattern over the identified survey areas.\n\nPhase II has the objective of collecting and returning a single unbroken egg located by Phase I data. UT-XD is equipped with two egg retrieval devices, first an elastic mesh attached by a frame to the landing gear of the quadcopter, and second a robotic arm with a collection bucket mounted on the quadcopter body. Both are visible through respective FPV cameras. Either of these two features could be used for retrieval, depending on the target egg’s situation and environment. UT-XD flies at 50ft AGL autonomously to the determined coordinates of the target egg. It switches to manual control through the FPV cameras for egg retrieval then switches back into autonomous mode for return to base.\n\\newline\n",
+			"file": "/D/introduction.tex",
+			"file_size": 3531,
+			"file_write_time": 131701043280000000,
+			"settings":
+			{
+				"buffer_size": 3525,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Chris Dryden/Desktop/python_koans/README.rst",
+			"settings":
+			{
+				"buffer_size": 6682,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "coordinatecalculation.py",
+			"settings":
+			{
+				"buffer_size": 2659,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "coordinatecalculation"
+			}
+		},
+		{
+			"file": "saveimages.py",
+			"settings":
+			{
+				"buffer_size": 359,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Chris Dryden/Desktop/projects/UTAT UAV/FeatureDetector/saveimages.py",
+		"/C/Users/Chris Dryden/Desktop/projects/UTAT UAV/FeatureDetector/main.py",
+		"/C/Users/Chris Dryden/Desktop/projects/UTAT UAV/FeatureDetector/blob_detection.py",
+		"/C/Users/Chris Dryden/Desktop/projects/TournamentWebsite/static/style.css",
+		"/C/Users/Chris Dryden/Desktop/projects/TournamentWebsite/templates/login.html",
+		"/C/Users/Chris Dryden/Desktop/projects/TournamentWebsite/main.py",
+		"/C/Users/Chris Dryden/Downloads/lab6Two.s",
+		"/C/Users/Chris Dryden/Downloads/jennifer-website-3/jennifer website/contact.html",
+		"/C/Users/Chris Dryden/Desktop/projects/UTAT UAV/saveimages.py",
+		"/C/Users/Chris Dryden/Desktop/projects/UTAT UAV/blob_detection.py",
+		"/C/Users/Chris Dryden/Desktop/projects/UTAT UAV/main.py",
+		"/C/Users/Chris Dryden/Desktop/projects/UTAT UAV/svaeimages",
+		"/C/UTSUCoin/CustomGenesis.json",
+		"/C/Users/Chris Dryden/Desktop/sub1.s",
+		"/C/Users/Chris Dryden/Desktop/projects/2018/Search By Convolution Unsupervised Learning/visualsearch/dict.json",
+		"/C/Users/Chris Dryden/Desktop/Github Repositories/lib/chrisdryden/UofTHack/package.json",
+		"/C/Users/Chris Dryden/Desktop/Github Repositories/lib/chrisdryden/UofTHack/functions/__main__.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\t",
+			"get_features",
+			"r12",
+			"_",
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"    ",
+			"r11",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "blob_detection.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 651.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/introduction.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								935,
+								935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Chris Dryden/Desktop/python_koans/README.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 38.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "coordinatecalculation.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2174,
+								2174
+							]
+						],
+						"settings":
+						{
+							"auto_name": "coordinatecalculation",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1444.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "saveimages.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

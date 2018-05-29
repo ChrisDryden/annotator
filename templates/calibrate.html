@@ -1,0 +1,111 @@
+{% include "header.html" %}
+
+<script>
+function updateAreaInput(val) {
+          document.getElementById('AreaInput').value=val; 
+}
+function updateCircInput(val) {
+          document.getElementById('CircInput').value=val; 
+        }
+function updateConvInput(val) {
+          document.getElementById('ConvInput').value=val; 
+        }
+function updateThreInput(val) {
+          document.getElementById('ThreInput').value=val; 
+        }
+function updateInerInput(val) {
+          document.getElementById('InerInput').value=val; 
+        }
+</script>
+
+<div class="login-screen">
+	<div class="app-title">
+		<h1>Calibration Interphase</h1>
+		<h1></h1>
+		<p>{{response}}</p>
+	</div>
+</div>
+<br>
+<div class="test_images">
+	<div class="login-screen">
+		<div class="app-title">
+			<img src="{{test_image_flask}}" alt= user_image style='height: 100%; width: 100%; object-fit: contain'>
+		</div>
+	</div>
+</div>
+
+
+<form action="/next_image_calibration" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Next Image" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>
+
+<form action="/test_calibration" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+
+				<h5>Minimum Area</h5>
+                <input type="range" name="min_area" min="10" max="100" value="{{area_value}}" onchange="updateAreaInput(this.value);">
+				<input type="text" id="AreaInput" value={{area_value}}>
+            	</div>
+				<div class="app-title">
+
+				<h5>Minimum Circularity</h5>
+                <input type="range" name="min_circ" min="1" max="100" value="{{circ_value}}" onchange="updateCircInput(this.value);">
+				<input type="text" id="CircInput" value={{circ_value}}>
+            	</div>
+				<div class="app-title">
+
+				<h5>Minimum Convexity</h5>
+                <input type="range" name="min_conv" min="1" max="100" value="{{conv_value}}" onchange="updateConvInput(this.value);">
+				<input type="text" id="ConvInput" value={{conv_value}}>
+            	</div>
+				<div class="app-title">
+
+				<h5>Minimum Threshold</h5>
+                <input type="range" name="min_thre" min="1" max="100" value="{{thre_value}}" onchange="updateThreInput(this.value);">
+				<input type="text" id="ThreInput" value={{thre_value}}>
+            	</div>
+				<div class="app-title">
+
+				<h5>Minimum Inertia</h5>
+                <input type="range" name="min_iner" min="1" max="100" value="{{iner_value}}" onchange="updateInerInput(this.value);">
+				<input type="text" id="InerInput" value={{iner_value}}>
+            	</div>
+				<div class="app-title">
+
+
+				<input type="submit" value="Calibrate" class="btn btn-primary btn-large btn-block" >
+				
+			</div>
+		</div>
+	</div>
+</form>	
+
+
+<form action="/finish_calibration" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Finish Calibration" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>
+
+<form action="/return_home" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Back" class="btn btn-primary btn-large btn-block">
+			</div>
+		</div>
+	</div>
+</form>		
+ 
